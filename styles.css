@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* padding-top: 80px; */
+}
+
+.middle {
+    flex: 1;
+    max-width: 600px;
+    min-width: 400px;
+    margin-left: -30px;
+}
+.left {
+    align-self: center;
+    font-size: 26px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+nav {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 5;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+nav li a {
+    color: white;
+    text-decoration: none;  
+    transition: color 0.3s;
+}
+
+nav li a:hover {
+    color: rgb(17, 236, 163);
+}
+#right div {
+    width: 22px;
+    margin-right: 16px;
+}
+#right img {
+    width: 100%;
+}
+
+
+#right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    margin-bottom: 250px;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#home {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+
+#typewriter {
+    margin-top: -30px;
+}
+
+#hire {
+    background: none;
+    border: 2px solid rgb(17, 236, 163);
+    padding: 15px 45px;
+    border-radius: 2em;
+    color: rgb(17, 236, 163);
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s;
+    margin-top: 16px;
+}
+#hire:hover {
+    background-color: rgb(17, 236, 163);
+    cursor: pointer;
+    color: white;
+}
+
+
+
+nav a.active {
+    color: rgb(17, 236, 163); /* Change this color to your desired active link color */
+}
+
+.about-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-wrap: wrap;
+}
+
+.about-left {
+    text-align: left;
+    max-width: 60%;
+}
+.about-right {
+    text-align: left;
+    min-width: 30%;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.about-right p {
+    color: rgb(168, 168, 168);
+}
+
+a {
+    text-decoration: none;
+}
+
+#cv {
+    background: rgb(17, 236, 163);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 2em;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+#cv:hover {
+    opacity: 0.7;
+}
+
+.fix {
+    position: absolute;
+    /* width: 90px; */
+    background-color: rgb(17, 236, 163);
+    height: 3px;
+    bottom: -10px;
+    left: 30%;
+    right: 30%;
+}
+
+#arrow {
+    position: fixed;
+    z-index: 2;
+    width: 45px;
+    height: 45px;
+    background: rgb(17, 236, 163);
+    bottom: 20px;
+    right: 20px;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.sk {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.container {
+    
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: 30% 30% 30% ;
+}
+
+.sub-container {
+    /* padding: 100px; */
+    width: 200px;
+    height: 200px;
+    background-color: rgb(78, 78, 148);
+    box-shadow: -1px 1px 5px rgba(255, 255, 255, 0.6);
+    display: grid; 
+    grid-template-rows: 1.7fr 1fr;
+}
+
+#portfolio {
+    background-color: rgba(78, 78, 148, 0.1);
+}
+
+.tooltip {
+    position: absolute;
+    background-color: black;
+    bottom: -30px;
+    right: -100px;
+    width: 100px;
+    padding: 3px 5px 3px 5px;
+    border-radius: 2px;
+    background-color: grey;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.image {
+    display: inline;
+}
+.image:hover .tooltip {
+    opacity: 1;
+}
